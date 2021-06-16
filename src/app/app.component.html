@@ -1,0 +1,19 @@
+<h1>
+  Simple rich text editor (using Quill) output comparison with Google's
+  diff-match-patch library
+</h1>
+<p>
+  Start editing first text and second text then click button
+  <strong>Do Diff</strong> to see some magic happen :)
+</p>
+
+<p>First text:</p>
+<quill-editor [(ngModel)]="left"></quill-editor>
+<p>Second text:</p>
+<quill-editor [(ngModel)]="right"></quill-editor>
+
+<button (click)="doDiff()">Do Diff</button>
+<button (click)="clear()">Clear</button>
+
+<p>Diff:</p>
+<div [innerHTML]="diffOutput"></div>

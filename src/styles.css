@@ -1,0 +1,16 @@
+/* Add application styles & imports to this file! */
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+
+ins,
+ins > * {
+  color: black;
+  background: #bbffbb !important;
+}
+
+del,
+del > * {
+  color: black;
+  background: #ffbbbb !important;
+}
